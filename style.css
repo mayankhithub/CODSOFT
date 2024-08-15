@@ -1,132 +1,94 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+@font-face {
+    src:url(fonts/OneDirection.ttf)format("truetype");
+    font-family: nos;
 }
-
-/* General Styles */
-body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header Styles */
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+.paragraph{
     text-align: center;
+    font-size: 30px;
+    font-family:sans-serif;
+    color: white;
+}
+.paragraph2{
+    text-align:center;
+    font-size: 100px;
+    font-family: nos;
+    color: white;
+}
+.menu-bar
+{
+text-align:center;
+background-color: #000000;
+}
+.menu-bar ul
+{
+   display: inline-flex;
+   color:floralwhite
+}
+.menu-bar ul li
+{
+    font-family: Impact;
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+
 }
 
-header h1 {
-    margin-bottom: 10px;
+.menu-bar ul li:hover
+{
+
+    background: floralwhite;
+    color: #000000;
+    border-radius:3px;
+}
+.paragraph5{
+    font-size: 20px;
+    font-family:Courier;
+    margin: 30px;
+    color: white;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
 
-header nav ul li a {
-    color: #fff;
+
+.lets-go-btn{
+    color: floralwhite;
+    background: rgb(227, 26, 26);
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    border-radius: 5px;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    margin-left: -15px; 
+}
+.lets-go-btn:hover{
+    background: rgb(54, 1, 1);
 }
 
-header nav ul li a:hover {
-    background: #555;
-}
-
-/* Hero Section */
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero .btn {
-    padding: 10px 30px;
-    background: #ff6b6b;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: background 0.3s;
-}
-
-.hero .btn:hover {
-    background: #ff4757;
-}
-
-/* Features Section */
-.features {
+.icons{
     display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
+    font-size: 3rem;
+    margin-top:0;
+    line-height: 0;
+    align-items: flex-end;
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    
 }
 
-.feature {
-    flex: 1;
-    background: #fff;
-    padding: 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.icons a { margin-right:75px; }
+
+.icons :hover{
+    transform: scale(1.5);
 }
 
-.feature h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+.footer{
+    background-color:black;
+    margin-top:28%;
 }
-
-.feature p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature {
-        margin-bottom: 20px;
-    }
+.p1{
+    color: floralwhite;
+    font-size: larger;
+    padding-bottom: 10px;
+    
 }
